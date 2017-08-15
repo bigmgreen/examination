@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rev-collector": "^1.2.2"
+  },
+  "devDependencies": {
+    "gulp-html-helper": "^1.0.5",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-md5-img": "^1.0.1",
+    "gulp-md5-save": "^1.0.1",
+    "gulp-replace": "^0.6.1",
+    "imagemin-pngquant": "^5.0.1"
+  }
+}
