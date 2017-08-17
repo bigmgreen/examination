@@ -122,10 +122,10 @@ module.exports.computer = {
         {
             "answer": "D",
             "title": "使用HTML语言表示超链接的标记是(      )。",
-            "A": "A.&lt;Center&gt;…&lt;/Center&gt;",
-            "B": "B.&lt;B&gt;…&lt;/B&gt;",
-            "C": "C.&lt;I&gt;…&lt;/I&gt;",
-            "D": "D.&lt;A  Href=“URL”&gt;…&lt;/A&gt;"
+            "A": "A.<Center>…</Center>",
+            "B": "B.<B>…</B>",
+            "C": "C.<I>…</I>",
+            "D": "D.<A  Href=“URL”>…</A>"
         },
         {
             "answer": "A",
@@ -172,7 +172,7 @@ module.exports.computer = {
             "B": "B.错",
         },
         {
-            "answer": "&lt;Esc&gt;",
+            "answer": "<Esc>",
             "title": "Excel2000中，取消数据输入时，使用___键。",
         },
         {
@@ -351,15 +351,15 @@ module.exports.computer = {
             "A": "A.可以选定一个单元格",
             "B": "B.可选定多个连续的单元格",
             "C": "C.可选定多个不连续的单元格",
-            "D": "D.选定多个连续单元格要用&lt;Ctrl&gt;键"
+            "D": "D.选定多个连续单元格要用<Ctrl>键"
         },
         {
             "answer": "A",
             "title": "使用HTML语言表示定义Web页的标记是(      )。",
-            "A": "A.&lt;HTML&gt;…&lt;/HTML&gt;",
-            "B": "B.&lt;HEAD&gt;…&lt;/HEAD&gt;",
-            "C": "C.&lt;TITLE&gt;…&lt;/TITLE&gt;",
-            "D": "D.&lt;BODY&gt;…&lt;/BODY&gt;"
+            "A": "A.<HTML>…</HTML>",
+            "B": "B.<HEAD>…</HEAD>",
+            "C": "C.<TITLE>…</TITLE>",
+            "D": "D.<BODY>…</BODY>"
         },
         {
             "answer": "底部",
@@ -368,18 +368,18 @@ module.exports.computer = {
         {
             "answer": "C",
             "title": "使用HTML语言表示头部标题的标记是(      )。",
-            "A": "A.&lt;HTML&gt;…&lt;/HTML&gt;",
-            "B": "B.&lt;HEAD&gt;…&lt;/HEAD&gt;",
-            "C": "C.&lt;TITLE&gt;…&lt;/TITLE&gt;",
-            "D": "D.&lt;BODY&gt;…&lt;/BODY&gt;"
+            "A": "A.<HTML>…</HTML>",
+            "B": "B.<HEAD>…</HEAD>",
+            "C": "C.<TITLE>…</TITLE>",
+            "D": "D.<BODY>…</BODY>"
         },
         {
             "answer": "D",
             "title": "使用HTML语言表示页面主体的标记是(      )。",
-            "A": "A.&lt;HTML&gt;…&lt;/HTML&gt;",
-            "B": "B.&lt;HEAD&gt;…&lt;/HEAD&gt;",
-            "C": "C.&lt;TITLE&gt;…&lt;/TITLE&gt;",
-            "D": "D.&lt;BODY&gt;…&lt;/BODY&gt;"
+            "A": "A.<HTML>…</HTML>",
+            "B": "B.<HEAD>…</HEAD>",
+            "C": "C.<TITLE>…</TITLE>",
+            "D": "D.<BODY>…</BODY>"
         },
         {
             "answer": "B",
@@ -411,7 +411,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "Windows20003，不能用&lt;Delete&gt;键删除选定的文件和文件夹。",
+            "title": "Windows20003，不能用<Delete>键删除选定的文件和文件夹。",
             "A": "A.对",
             "B": "B.错",
         },
@@ -421,7 +421,7 @@ module.exports.computer = {
             "A": "A.选定后使用“粘贴”命令",
             "B": "B.拖动到回收站",
             "C": "C.选定后用“删除”命令",
-            "D": "D.选定后用&lt;Delete&gt;键"
+            "D": "D.选定后用<Delete>键"
         },
         {
             "answer": "C",
@@ -479,7 +479,7 @@ module.exports.computer = {
             "answer": "D",
             "title": "Excel2000中，下列关于输入数据的描述中，错误的是(      )。",
             "A": "A.输入结束可按回车键",
-            "B": "B.取消输入可按&lt;Esc&gt;键",
+            "B": "B.取消输入可按<Esc>键",
             "C": "C.规律数据有自动输入功能",
             "D": "D.数值型数据自动左对齐"
         },
@@ -734,10 +734,10 @@ module.exports.computer = {
         {
             "answer": "D",
             "title": "下列键盘上的各种按键中，不能单独使用的是(      )",
-            "A": "A.&lt; End &gt;",
-            "B": "B.&lt; N &gt;",
-            "C": "C.&lt; * &gt;",
-            "D": "D.&lt; alt &gt;"
+            "A": "A.< End >",
+            "B": "B.< N >",
+            "C": "C.< * >",
+            "D": "D.< alt >"
         },
         {
             "answer": "C",
@@ -1029,7 +1029,7 @@ module.exports.computer = {
         },
         {
             "answer": "A",
-            "title": "在HTML语言3，超链接标记为&lt;a Href=\"URL\"&gt;…&lt;/A&gt;",
+            "title": "在HTML语言3，超链接标记为<a Href=\"URL\">…</A>",
             "A": "A.对",
             "B": "B.错",
         },
@@ -1088,10 +1088,10 @@ module.exports.computer = {
         {
             "answer": "B",
             "title": "使用HTML语言表示黑体字的标记是(      )。",
-            "A": "A.&lt;Center&gt;…&lt;/Center&gt;",
-            "B": "B.&lt;B&gt;…&lt;/B&gt;",
-            "C": "C.&lt;I&gt;…&lt;/I&gt;",
-            "D": "D.&lt;A  Href=“URL”&gt;…&lt;/A&gt;"
+            "A": "A.<Center>…</Center>",
+            "B": "B.<B>…</B>",
+            "C": "C.<I>…</I>",
+            "D": "D.<A  Href=“URL”>…</A>"
         },
         {
             "answer": "B",
@@ -1108,8 +1108,8 @@ module.exports.computer = {
             "D": "D.设置“左手习惯”或“右手习惯”"
         },
         {
-            "answer": "&lt;用户名&gt;",
-            "title": "电子邮件地址格式是___@&lt;邮箱域名&gt;。",
+            "answer": "<用户名>",
+            "title": "电子邮件地址格式是___@<邮箱域名>。",
         },
         {
             "answer": "A",
@@ -1157,17 +1157,17 @@ module.exports.computer = {
         },
         {
             "answer": "A",
-            "title": "Word20003，删除文档内容可用&lt;Backspace&gt;键，也可用“剪切”按钮。",
+            "title": "Word20003，删除文档内容可用<Backspace>键，也可用“剪切”按钮。",
             "A": "A.对",
             "B": "B.错",
         },
         {
             "answer": "C",
             "title": "使用HTML语言表示斜体字的标记是(      )。",
-            "A": "A.&lt;Center&gt;…&lt;/Center&gt;",
-            "B": "B.&lt;B&gt;…&lt;/B&gt;",
-            "C": "C.&lt;I&gt;…&lt;/I&gt;",
-            "D": "D.&lt;A  Href=“URL”&gt;…&lt;/A&gt;"
+            "A": "A.<Center>…</Center>",
+            "B": "B.<B>…</B>",
+            "C": "C.<I>…</I>",
+            "D": "D.<A  Href=“URL”>…</A>"
         },
         {
             "answer": "B",
@@ -1198,10 +1198,10 @@ module.exports.computer = {
         {
             "answer": "B",
             "title": "使用HTML语言表示页面头部的标记是(      )。",
-            "A": "A.&lt;HTML&gt;…&lt;/HTML&gt;",
-            "B": "B.&lt;HEAD&gt;…&lt;/HEAD&gt;",
-            "C": "C.&lt;TITLE&gt;…&lt;/TITLE&gt;",
-            "D": "D.&lt;BODY&gt;…&lt;/BODY&gt;"
+            "A": "A.<HTML>…</HTML>",
+            "B": "B.<HEAD>…</HEAD>",
+            "C": "C.<TITLE>…</TITLE>",
+            "D": "D.<BODY>…</BODY>"
         },
         {
             "answer": "A",
@@ -1488,10 +1488,10 @@ module.exports.computer = {
         {
             "answer": "A",
             "title": "使用HTML语言表示字符居中的标记是(      )。",
-            "A": "A.&lt;Center&gt;…&lt;/Center&gt;",
-            "B": "B.&lt;B&gt;…&lt;/B&gt;",
-            "C": "C.&lt;I&gt;…&lt;/I&gt;",
-            "D": "D.&lt;A  Href=“URL”&gt;…&lt;/A&gt;"
+            "A": "A.<Center>…</Center>",
+            "B": "B.<B>…</B>",
+            "C": "C.<I>…</I>",
+            "D": "D.<A  Href=“URL”>…</A>"
         },
         {
             "answer": "B",
@@ -1501,7 +1501,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "Windows20003，直接拖动鼠标，按住&lt;Shift&gt;键可创建应用程序的快捷方式。",
+            "title": "Windows20003，直接拖动鼠标，按住<Shift>键可创建应用程序的快捷方式。",
             "A": "A.对",
             "B": "B.错",
         },
@@ -1749,7 +1749,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "在HTML语言3，字符属性的斜体字标记为&lt;B&gt;…&lt;/B&gt;",
+            "title": "在HTML语言3，字符属性的斜体字标记为<B>…</B>",
             "A": "A.对",
             "B": "B.错",
         },
@@ -1767,13 +1767,13 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "在HTML语言3，头部标题使用的标记为&lt;HEAD&gt;…&lt;/HEAD",
+            "title": "在HTML语言3，头部标题使用的标记为<HEAD>…</HEAD",
             "A": "A.对",
             "B": "B.错",
         },
         {
             "answer": "A",
-            "title": "典型域名结构如下：&lt;主机名&gt;.&lt;单位名&gt;.&lt;机构名&gt;.&lt;国家或地区名&gt;。",
+            "title": "典型域名结构如下：<主机名>.<单位名>.<机构名>.<国家或地区名>。",
             "A": "A.对",
             "B": "B.错",
         },
@@ -1916,8 +1916,8 @@ module.exports.computer = {
         {
             "answer": "C",
             "title": "Internet中，下列关于电子邮件地址的描述中，错误的是(      )。",
-            "A": "A.地址格式为&lt;用户名&gt;@&lt;邮箱域名&gt;",
-            "B": "B.&lt;用户名&gt;对邮件服务器应是惟一",
+            "A": "A.地址格式为<用户名>@<邮箱域名>",
+            "B": "B.<用户名>对邮件服务器应是惟一",
             "C": "C.用户只能在同一地区注册域名",
             "D": "D.不区分大小写字母"
         },
@@ -1967,7 +1967,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "电子邮件地址格式：&lt;主机名&gt;@&lt;邮箱域名&gt;。",
+            "title": "电子邮件地址格式：<主机名>@<邮箱域名>。",
             "A": "A.对",
             "B": "B.错",
         },
@@ -2061,7 +2061,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "Excel20003，向单元格输入数据结束时按空格键，取消时用&lt;Delete&gt;键。",
+            "title": "Excel20003，向单元格输入数据结束时按空格键，取消时用<Delete>键。",
             "A": "A.对",
             "B": "B.错",
         },
@@ -2165,7 +2165,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "在HTML语言3，字符属性的黑体字标记为&lt;I&gt;…&lt;/I&gt;",
+            "title": "在HTML语言3，字符属性的黑体字标记为<I>…</I>",
             "A": "A.对",
             "B": "B.错",
         },
@@ -2403,7 +2403,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "Windows20003，使用&lt;Print Screen&gt;键可将屏幕上当前对话框复制到剪贴板上。",
+            "title": "Windows20003，使用<Print Screen>键可将屏幕上当前对话框复制到剪贴板上。",
             "A": "A.对",
             "B": "B.错",
         },
@@ -2708,7 +2708,7 @@ module.exports.computer = {
             "D": "D.64"
         },
         {
-            "answer": "&lt;Del&gt;",
+            "answer": "<Del>",
             "title": "Word2000中，删除文档中插入的图形，可先选中图形后，按___键。",
         },
         {
@@ -2777,7 +2777,7 @@ module.exports.computer = {
         },
         {
             "answer": "B",
-            "title": "在HTML语言3，页面头部使用的标记为&lt;TITLE&gt;…&lt;/TITLE&gt;",
+            "title": "在HTML语言3，页面头部使用的标记为<TITLE>…</TITLE>",
             "A": "A.对",
             "B": "B.错",
         },
@@ -2953,7 +2953,7 @@ module.exports.computer = {
         },
         {
             "answer": "A",
-            "title": "在HTML语言3，定义Web页使用的标记为&lt;HTM&gt;…&lt;/HTM&gt;",
+            "title": "在HTML语言3，定义Web页使用的标记为<HTM>…</HTM>",
             "A": "A.对",
             "B": "B.错",
         },
@@ -2976,7 +2976,7 @@ module.exports.computer = {
             "B": "B.错",
         },
         {
-            "answer": "&lt;PrintScreen&gt;",
+            "answer": "<PrintScreen>",
             "title": "Windows2000中，复制整个屏幕到剪贴板上的方法是用___键。",
         },
         {
@@ -3198,7 +3198,7 @@ module.exports.computer = {
             "B": "B.错",
         },
         {
-            "answer": "&lt;Ctrl&gt;",
+            "answer": "<Ctrl>",
             "title": "Excel2000中，选定多个不连续单元格方法是先选定一个区域，再按___键选另一区城。",
         },
         {
