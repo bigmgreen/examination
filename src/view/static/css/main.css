@@ -105,7 +105,7 @@ h4 {
 }
 
 .result {
-    line-height: 1.5;
+    padding-bottom: 0.5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -119,8 +119,9 @@ h4 {
     font-size: 14px;
     float: left;
     width: 50%;
-    padding: 0.6em;
+    padding: 0.2em .6em;
     padding-left: 4em;
+    line-height: 1.5;
 }
 
 .rate,
@@ -138,4 +139,6 @@ h4 {
     color: #ffffff;
     text-align: center;
     padding: 0;
+    padding-top: 0.5em;
+    font-size: 16px;
 }
