@@ -1396,9 +1396,11 @@ module.exports.math_1 = {
         },
         {
             "title": "题目",
-            "A": "A.B",
-            "B": "B.C",
-            "C": "C.D",
+            "img": "math_sadsdd.png",
+            "A": "A.A",
+            "B": "B.B",
+            "C": "C.C",
+            "D": "D.D",
             "answer": "D"
         },
         {

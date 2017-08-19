@@ -39,6 +39,7 @@ function init(url, name) {
                 }
                 if (n_min > 59) {
                     n_sec = 0;
+                    n_min = 0;
                     n_hour++;
                 }
 

@@ -6,19 +6,64 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./static/css/reset.css">
-    <link rel="stylesheet" href="./static/css/index.css">
+    <style>
+        dl {
+            padding: 1em;
+        }
+
+        dt {
+            text-align: center;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        a {
+            width: 100%;
+            display: block;
+            padding: .5em -0px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: #04be02;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 14px;
+            padding-right: 14px;
+            text-decoration: none;
+            overflow: visible;
+            color: #ffffff !important;
+            line-height: 42px;
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+        .real-title {
+            color: #ff6805;
+        }
+        .real {
+            background-color: #ff6805;
+        }
+    </style>
     <title>首页</title>
 </head>
 <body>
-<ul>
-    <li><a href="/mockEnglish">模拟题英语</a></li>
-    <li><a href="/mockComputer">模拟题计算机</a></li>
-    <li><a href="/mockMath">模拟题数学</a></li>
-    <li><a href="/reviewEnglish">复习题英语</a></li>
-    <li><a href="/reviewComputer">复习题计算机</a></li>
-    <li><a href="/reviewMath_1">复习题数学-1</a></li>
-    <li><a href="/reviewMath_2">复习题数学-2</a></li>
-    <li><a href="/reviewMath_3">复习题数学-3</a></li>
-</ul>
+<dl>
+    <dt>模拟真题</dt>
+    <dd><a href="/mockEnglish">英语</a></dd>
+    <dd><a href="/mockComputer">计算机</a></dd>
+    <dd><a href="/mockMath">数学</a></dd>
+    <dt class="real-title">模拟考试（from题库）</dt>
+    <dd><a class="real" href="/realEnglish">英语</a></dd>
+    <dd><a class="real" href="/realComputer">计算机</a></dd>
+    <dd><a class="real" href="/realMath">数学</a></dd>
+    <dt>复习题库(考试范围)</dt>
+    <dd><a href="/reviewEnglish">英语</a></dd>
+    <dd><a href="/reviewComputerChoice">计算机选择题</a></dd>
+    <dd><a href="/reviewComputerJudge">计算机判断题</a></dd>
+    <dd><a href="/reviewComputerFill">计算机填空题</a></dd>
+    <dd><a href="/reviewMath_1">数学-1</a></dd>
+    <dd><a href="/reviewMath_2">数学-2</a></dd>
+    <dd><a href="/reviewMath_3">数学-3</a></dd>
+</dl>
 </body>
 </html>

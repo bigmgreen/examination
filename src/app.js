@@ -44,7 +44,9 @@ var reviewMath_1 = require('./data/review/math/math_1');
 var reviewMath_2 = require('./data/review/math/math_2');
 var reviewMath_3 = require('./data/review/math/math_3');
 var reviewEnglish = require('./data/review/english/english');
-var reviewComputer = require('./data/review/computer/computer');
+var computerChoice = require('./data/review/computer/computer-choice');
+var computerJudge = require('./data/review/computer/computer-judge');
+var computerFill = require('./data/review/computer/computer-fill');
 
 app.get('/review/math_1', (req, res)=> {
     res.json(reviewMath_1);
@@ -55,19 +57,34 @@ app.get('/review/math_2', (req, res)=> {
 app.get('/review/math_3', (req, res)=> {
     res.json(reviewMath_3);
 });
+
 app.get('/review/english', (req, res)=> {
     res.json(reviewEnglish);
 });
-app.get('/review/computer', (req, res)=> {
-    res.json(reviewComputer);
+app.get('/review/computerChoice', (req, res)=> {
+    res.json(computerChoice);
+});
+app.get('/review/computerJudge', (req, res)=> {
+    res.json(computerJudge);
+});
+app.get('/review/computerFill', (req, res)=> {
+    res.json(computerFill);
 });
 
 app.get('/reviewEnglish', function (req, res) {
     res.sendFile(__dirname + '/view/review/english.html');
 });
-app.get('/reviewComputer', function (req, res) {
-    res.sendFile(__dirname + '/view/review/computer.html');
+app.get('/reviewComputerChoice', function (req, res) {
+    res.sendFile(__dirname + '/view/review/computer-choice.html');
 });
+app.get('/reviewComputerJudge', function (req, res) {
+    res.sendFile(__dirname + '/view/review/computer-judge.html');
+});
+app.get('/reviewComputerFill', function (req, res) {
+    res.sendFile(__dirname + '/view/review/computer-fill.html');
+});
+
+
 app.get('/reviewMath_1', function (req, res) {
     res.sendFile(__dirname + '/view/review/math_1.html');
 });
@@ -79,5 +96,77 @@ app.get('/reviewMath_3', function (req, res) {
 });
 
 /*   题库   end   */
+
+/*   考试题  start   */
+
+function getRandom(_item, count = 100) {
+
+    let items = [];
+    while (true) {
+
+        let max = _item.length - 1;
+        parseInt(Math.random() * (max + 1), 10);
+        let num = Math.floor(Math.random() * (max + 1));
+
+        items.push(_item.splice(num, 1)[0]);
+
+        if (items.length >= count) {
+            break;
+        }
+    }
+
+    return items;
+}
+
+app.get('/real/english', function (req, res) {
+    res.json({
+        english: {
+            items: getRandom(reviewEnglish.english.items),
+            title: "﻿北京大学入学测试题",
+            subTitle: "专升本 英语 入学测试题"
+        }
+    });
+});
+app.get('/real/computer', function (req, res) {
+    let items = [].concat(
+        getRandom(computerJudge.computer.items, 10),
+        getRandom(computerFill.computer.items, 10),
+        getRandom(computerChoice.computer.items, 80)
+    );
+
+
+    res.json({
+        computer: {
+            items: items,
+            title: "﻿北京大学入学测试题",
+            subTitle: "专升本 计算机 入学测试题"
+        }
+    });
+});
+app.get('/real/math', function (req, res) {
+
+    let items = [].concat(reviewMath_1.math_1.items
+        , reviewMath_2.math_2.items, reviewMath_3.math_3.items);
+
+    res.json({
+        math: {
+            items: getRandom(items),
+            title: "﻿北京大学入学测试题",
+            subTitle: "专升本 数学 入学测试题"
+        }
+    });
+});
+
+app.get('/realEnglish', function (req, res) {
+    res.sendFile(__dirname + '/view/real/english.html');
+});
+app.get('/realComputer', function (req, res) {
+    res.sendFile(__dirname + '/view/real/computer.html');
+});
+app.get('/realMath', function (req, res) {
+    res.sendFile(__dirname + '/view/real/math.html');
+});
+
+/*   考试题  end   */
 
 module.exports = app;

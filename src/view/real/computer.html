@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模拟题计算机</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+
+<div id="app"></div>
+<ul class="result">
+    <li class="time">已用时:<b id="time">00:00:00</b></li>
+    <li class="right">还剩有:<b id="total">0</b>道题</li>
+    <li class="right">答对的:<b id="right">0</b>个</li>
+    <li class="wrong">答错的:<b id="wrong">0</b>个</li>
+    <li class="score">总得分:<b id="score">0</b>分</li>
+</ul>
+<script id="tmpl" type="text/x-handlebars-template">
+    <a class="go-back" href="/">返回</a>
+    <article>
+        <h3>{{title}}</h3>
+        <h4>{{subTitle}}</h4>
+        {{#each items}}
+        <div class="item" data-question>
+            <dl>
+                <dt class="item-title"><b>{{addOne @index}}</b>.{{this.title}}</dt>
+                {{#if this.A}}
+                <dd><a data-item="A" data-answer="{{this.answer}}" href="javascript:;">{{this.A}}</a></dd>
+                {{/if}}
+                {{#if this.B}}
+                <dd><a data-item="B" data-answer="{{this.answer}}" href="javascript:;">{{this.B}}</a></dd>
+                {{/if}}
+                {{#if this.C}}
+                <dd><a data-item="C" data-answer="{{this.answer}}" href="javascript:;">{{this.C}}</a></dd>
+                {{/if}}
+                {{#if this.D}}
+                <dd><a data-item="D" data-answer="{{this.answer}}" href="javascript:;">{{this.D}}</a></dd>
+                {{/if}}
+            </dl>
+            <span data-item-answer class="item-answer">正确答案：{{this.answer}}</span>
+        </div>
+        {{/each}}
+    </article>
+</script>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/handlebars.js"></script>
+<script src="/static/js/script.js"></script>
+<script>
+    $(function () {
+        init('/real/computer', 'computer');
+    });
+</script>
+</body>
+</html>
