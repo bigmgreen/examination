@@ -1,3 +1,4 @@
+
 var express = require('express');
 var path = require('path');
 var app = express();
@@ -102,12 +103,12 @@ app.get('/reviewMath_3', function (req, res) {
 function getRandom(_item, count) {
 
     count = count || 100;
-    let items = [];
+    var items = [];
     while (true) {
 
-        let max = _item.length - 1;
+        var max = _item.length - 1;
         parseInt(Math.random() * (max + 1), 10);
-        let num = Math.floor(Math.random() * (max + 1));
+        var num = Math.floor(Math.random() * (max + 1));
 
         items.push(_item.splice(num, 1)[0]);
 
@@ -129,7 +130,7 @@ app.get('/real/english', function (req, res) {
     });
 });
 app.get('/real/computer', function (req, res) {
-    let items = [].concat(
+    var items = [].concat(
         getRandom(computerJudge.computer.items, 10),
         getRandom(computerFill.computer.items, 10),
         getRandom(computerChoice.computer.items, 80)
@@ -146,7 +147,7 @@ app.get('/real/computer', function (req, res) {
 });
 app.get('/real/math', function (req, res) {
 
-    let items = [].concat(reviewMath_1.math_1.items
+    var items = [].concat(reviewMath_1.math_1.items
         , reviewMath_2.math_2.items, reviewMath_3.math_3.items);
 
     res.json({
