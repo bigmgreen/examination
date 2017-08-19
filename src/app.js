@@ -99,8 +99,9 @@ app.get('/reviewMath_3', function (req, res) {
 
 /*   考试题  start   */
 
-function getRandom(_item, count = 100) {
+function getRandom(_item, count) {
 
+    count = count || 100;
     let items = [];
     while (true) {
 
