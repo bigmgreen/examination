@@ -90,9 +90,18 @@ function init(url, name) {
         $('[data-question]').map(function (item, index) {
             var _item = $(this).find('[data-item]');
             if (!_item || _item.length == 0) {
-                $(this).find('[data-item-answer]').css({
+                var answer = $(this).find('[data-item-answer]');
+                answer.data('text', answer.html());
+                answer.css({
                     'visibility': 'visible',
-                    'color': '#04be02'
+                    'color': '#f00'
+                });
+                answer.html('点击查看答案');
+                $(this).click(function () {
+                    answer.css({
+                        'color': '#04be02'
+                    });
+                    answer.html(answer.data('text'));
                 });
             }
         });
