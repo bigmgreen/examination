@@ -100,7 +100,9 @@ app.get('/reviewMath_3', function (req, res) {
 
 /*   考试题  start   */
 
-function getRandom(_item, count) {
+function getRandom(_items, count) {
+
+    var _item = _items.slice(0);
 
     count = count || 100;
     var items = [];
