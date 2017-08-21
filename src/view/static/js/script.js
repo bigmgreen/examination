@@ -97,13 +97,50 @@ function init(url, name) {
                     'color': '#f00'
                 });
                 answer.html('点击查看答案');
-                $(this).click(function () {
+                answer.click(function () {
                     answer.css({
                         'color': '#04be02'
                     });
                     answer.html(answer.data('text'));
                 });
+                $(this).find('[data-item-answer-fill]')
+                    .css('display', 'block');
             }
+        });
+
+        //添加点击事件
+        $('body').on('click', '[data-item-answer-fill]', function () {
+
+            //拿到题目元素
+            var parent = $(this).parents('[data-question]');
+
+            // 判断是否已经被点击过了   start
+            var selected = parent.data('selected');
+            if (selected) {
+                return false;
+            }
+            parent.data('selected', true);
+            // 判断是否已经被点击过了   end
+
+            // 实时计算剩余题目个数
+            $('#total').html(--LEN);
+
+            var fill = $(this).data('item-answer-fill');
+
+            // 判断选择是否正确  start
+            if (fill === 'right') {
+                $(this).addClass('active');
+                calculate({
+                    right: 1
+                });
+            } else {
+                $(this).addClass('error');
+                calculate({
+                    wrong: 1
+                });
+            }
+            // 判断选择是否正确  end
+
         });
 
         //添加点击事件
